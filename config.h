@@ -1,29 +1,30 @@
 
 /* appearance */
-#define NUMCOLORS         13          // need at least 3
+#define NUMCOLORS         14          // need at least 3
 static const char colors[NUMCOLORS][ColLast][16] = {
 
 // border   foreground  background
-{ "#919191", "#919191", "#0c0c0c" },  // 0 = normal
-{ "#e0f04e", "#e0f04e", "#0c0c0c" },  // 1 = selected
+{ "#545454", "#545454", "#f0f0f0" },  // 0 = normal
+{ "#f0f0f0", "#545454", "#b7ebbd" },  // 1 = selected
 { "#ff0000", "#ff0000", "#0c0c0c" },  // 2 = alert red
-{ "#e0f04e", "#e0f04e", "#262626" },  // 3 = bright green on dark
-{ "#f7f7f7", "#f46c50", "#262626" },  // 4 = red
-{ "#f7f7f7", "#f4a550", "#262626" },  // 5 = orange
-{ "#f7f7f7", "#f5df50", "#262626" },  // 6 = yellow
-{ "#f7f7f7", "#9ddf49", "#262626" },  // 7 = green
-{ "#f7f7f7", "#3ab166", "#262626" },  // 8 = oceangreen
-{ "#f7f7f7", "#367e99", "#262626" },  // 9 = blue 
-{ "#f7f7f7", "#8c38a1", "#262626" },  // 10 = indigo
-{ "#f7f7f7", "#d0447f", "#262626" },  // 11 = violet
-{ "#c3c3c3", "#c3c3c3", "#262626" },  // 12 = gray on gray
+{ "#e0f04e", "#545454", "#b7ebbd" },  // 3 = bright green on dark
+{ "#f0f0f0", "#ff0000", "#222222" },  // 4 = red
+{ "#f0f0f0", "#ff5100", "#222222" },  // 5 = orange
+{ "#f0f0f0", "#ffff00", "#222222" },  // 6 = yellow
+{ "#f0f0f0", "#00ff00", "#222222" },  // 7 = green
+{ "#f0f0f0", "#00ffff", "#222222" },  // 8 = oceangreen
+{ "#f0f0f0", "#0000ff", "#222222" },  // 9 = blue 
+{ "#f0f0f0", "#a200ff", "#222222" },  // 10 = indigo
+{ "#f0f0f0", "#ff00e1", "#222222" },  // 11 = violet
+{ "#f0f0f0", "#f0f0f0", "#222222" },  // 12 = gray on gray
+{ "#f0f0f0", "#b7ebbd", "#f0f0f0" },  // 13 = mode icons
 // add more here
 };
 
 static const char font[]            = "-*-tamsynmod-medium-r-*-*-17-*-*-*-*-*-*-*"; //-*-terminus-medium-r-*-*-20-*-*-*-*-*-*-*";
 static const char font2[]           = "-*-terminus-medium-r-*-*-22-*-*-*-*-*-*-*"; /* This is Dmenu's font */
 static const unsigned int borderpx  = 2;         /* border pixel of windows */
-static const unsigned int gappx     = 6;         /* gap size between windows */
+static const unsigned int gappx     = 0;         /* gap size between windows */
 static const unsigned int snap      = 8;         /* snap pixel */
 static const Bool showbar           = True;      /* False means no bar */
 static const Bool topbar            = True;      /* False means bottom bar */
@@ -41,7 +42,7 @@ static const Rule rules[] = {
     { "MPlayer",          NULL,        NULL,       1 << 4,       False,        -1 },
     { "URxvt",            NULL,        NULL,       1 << 0,       False,        -1 },
     { "libreoffice",      NULL,        NULL,       1 << 3,       True,         -1 },
-    { "Transmission-gtk", NULL,        NULL,       1 << 5,       False,        -1 },
+	{ "MuPDF", 			  NULL,        NULL,       1 << 5,       False,        -1 },
 };  
 
 /* layout(s) */

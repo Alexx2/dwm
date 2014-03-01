@@ -1,4 +1,4 @@
-This is a pacthed version of the DWM 6.0 tiling window manager.
+This is a patched version of the dwm 6.0 window manager. 
 
 The patches applied are under the the applied_patches dir. 
 
